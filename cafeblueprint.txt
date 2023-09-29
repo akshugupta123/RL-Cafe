@@ -1,0 +1,35 @@
+Project--->our menu needs -->end point to backend all details related to menu should be returned
+|
+----->book a table---|
+|                     ------>end point to backend--->should display available tables for reservation along with details liketables i.e
+|
+|                                               |------>name,email,phno,date,time,no of people,message--->submit(reservation table>(table reserve entity attributes)
+|-->Menu(entity)
+        |
+        |-->Menu name,des,price,categ(breakfast,launch,dinner,dessert)
+|
+|
+|--->Admin(dashboard)|-->reservation:-->endpoint to display no of reservation made
+                     |--->Add menu:-->no of items available in menu
+
+(entity)-->custname,email,phono,visitdate,time,no of people,customer message,booking
+|
+|--->Reservation data to be displayed in tabular form :at endpoint to reterview data from reservation table entity.
+
+|
+|--->Menu(Admin pannel)-->Add Menu-->new endpoint requried to add new item in the menu entity
+|--->complete menu:--->new endpoint to display all the available menu items
+                   |--->new end point to edit or update existing menu item
+                   |---->new end point to delete menu item from the menu
+|
+|
+|---->new end point is requried to send email notification for user to confirm table reservation after admin aproves reservation request by clicking on 
+      booking confirm button.
+(admin panel)--ui-->confirmbooking-->row email id-->email notification[last ui design]
+
+services-->eureka service,notification service,user service,reservation service,config server
+
+reservation service-->to handle with all reservation details
+notification service--->booking confirm user should be get email
+user service-->handle login,reg all user related sevice handled in this service(admin)-->type of user
+                          
